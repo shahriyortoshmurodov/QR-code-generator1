@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1 {
+    font-size: 2rem;
+    color: #4a4a4a;
+    margin-bottom: 1rem;
+}
+input.qrCodeName {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #8a2be2;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 1rem;
+    width: 250px;
+    transition: 0.3s;
+}
+input.qrCodeName:focus {
+    border-color: #6a1bbf;
+    box-shadow: 0 0 5px rgba(138, 43, 226, 0.5);
+}
+button.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #8a2be2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+button.btn:hover {
+    background-color: #6a1bbf;
+    transform: scale(1.05);
+}
+.qrCode {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px dashed #8a2be2;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.colorPicker {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.colorPicker label {
+    font-size: 1rem;
+    color: #4a4a4a;
+}
+
+input.colorInput {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    input.qrCodeName {
+        width: 100%;
+    }
+
+    button.btn {
+        width: 100%;
+    }
+}
